@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuickPOS – Point of Sale</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header>
+    <span>🛒</span>
+    <h1>QuickPOS</h1>
+  </header>
+
+  <main>
+    <!-- Left: product catalogue -->
+    <section id="product-section">
+      <p class="section-title">Menu / Products</p>
+      <div class="product-grid" id="product-grid"></div>
+    </section>
+
+    <!-- Right: cart -->
+    <aside id="cart-section">
+      <p class="section-title">Current Order</p>
+
+      <ul id="cart-items"></ul>
+
+      <div class="totals">
+        <div class="totals-row">
+          <span>Subtotal</span>
+          <span id="subtotal">$0.00</span>
+        </div>
+        <div class="totals-row tax">
+          <span>Tax (8%)</span>
+          <span id="tax">$0.00</span>
+        </div>
+        <div class="totals-row grand">
+          <span>Total</span>
+          <span id="total">$0.00</span>
+        </div>
+      </div>
+
+      <button id="checkout-btn" disabled>Checkout</button>
+    </aside>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
